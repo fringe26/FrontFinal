@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.old-price {
+    color: #c2c2d3;
+    font-weight: 600;
+    font-size: 15px;
+}
+.product-buttons {
+    transition: 0.5s;
+    top: 0.5rem;
+    right: -40px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    a {
+        margin-bottom: 10px;
+    }
+    i {
+        color: black;
+        font-size: 22px;
+        border: 1px solid black;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+}
+.new-price {
+    color: #d51243;
+    font-weight: 600;
+    font-size: 18px;
+}
+.prod-weight{
+    color: #9b9bb4;
+    font-size: .75rem;
+}
+.prod-stock {
+    color: #00b853;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .6875rem;
+}
+.addToCard {
+    margin:15px auto 0 auto;
+    background-color: #2A3A95;
+    border-radius: 20px;
+    padding: 0.4rem 1.5rem;
+    width: 80%;
+    text-align: center;
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    a{
+        color: white;
+    }
+    transition: 0.5s;
+}
+.prod-rating {
+    display: block;
+    font-size: .6875rem;
+    color: #FFCD00;
+    margin-bottom: 5px;
+}
+.prod-name {
+    transition: 0.5s;
+    color: #202435;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 10px;
+    &:hover {
+        color: #233A95 !important;
+    }
+}
+.prod {
+    border-radius: 8px;
+    position: relative;
+    padding: 1.25rem;
+    &:hover .product-buttons{
+        opacity: 1;
+        visibility: visible;
+        right: 10px;
+    }
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #c2c2d3;
+        border-radius: 8px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    &:hover .addToCard{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.prod-type{
+    text-transform: uppercase;
+}
