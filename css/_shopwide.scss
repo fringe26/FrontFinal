@@ -1,0 +1,43 @@
+#recently{
+    padding: 2rem 0;
+}
+#products{
+    padding: 3rem 0;
+    .left{
+        h5{
+            font-family: 'Dosis', sans-serif !important;       
+            font-size: .9375rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+        }
+            ul{
+                padding: 0;
+                li{
+                    margin-bottom: .625rem;
+                    a{
+                        input{
+                            border-color: #71778e;
+                        }
+                        color:#71778e;
+                        span{
+                            margin-left: 10px;
+                            font-size: .8125rem;
+                        }
+                    }
+                }
+            }
+        
+       
+    }
+    .right{
+        .shop-view{
+            background-color: #F7F8FD;
+            padding: 1rem 0;
+            border-radius: 8px;
+            a{
+                color: #71778e;
+                margin: 0 10px;
+            }
+        }
+    }
+}

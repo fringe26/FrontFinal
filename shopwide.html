@@ -23,9 +23,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Inter&family=Jost:wght@300&family=Lora&family=Nothing+You+Could+Do&family=Playfair+Display&family=Playfair+Display+SC&family=Trirong:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-        <title>Bacola – Grocery Market and Food Theme</title>
+    <title>Document</title>
 </head>
-<body>
+<body class="">
     <header>
         <section id="covid">
             <p>Due to the <strong>COVID 19</strong> epidemic, orders may be processed with a slight delay</p>
@@ -106,7 +106,7 @@
                 <div class="right col-lg-2 d-flex align-items-center text-center">
                     <a class="account ms-3 me-3" href="register.html"><i class="fa-solid fa-user"></i></a>
                     <div onclick="location.href = 'basket.html';" class="shop">
-                        <span class="me-3" id="rasxod">$0.00</span>
+                        <span class="me-3">$0.00</span>
                         <i class="fa-solid fa-basket-shopping"></i><span id="counterStrike"></span>
                         <div class="shop-view d-none">
                            <div class="null d-none">
@@ -270,292 +270,206 @@
             </div>
         </section>
     </header>
-    <section id="slider">
-            <div class="slider-all">
-                <div class="first">
-                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-image-6.jpg" alt="">
-                    <div class="text">
-                        <span>EXCLUSIVE OFFER</span>
-                        <span>-20% Off</span>
-                        <h3>A different kind of grocery store</h3>
-                        <p>Only this week. Don’t miss...</p>
-                        <span>from </span><span>$7.99</span>
-                        <a class="d-block" href="">Shop now</a>
+    <section id="products">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="left col-lg-3">
+                    <h5>PRODUCT CATEGORIES</h5>
+                    <div class="scroll">
+                        <div class="categories">
+                            <ul>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Beverages</span>
+                                        </label>
+                                    </a>
+                                    <span class="more float-end">+</span>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Biscuits & Snacks</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Breads & Bakery</span>
+                                        </label>
+                                    </a>
+                                    <span class="more float-end">+</span>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Breakfast & Dairy</span>
+                                        </label>
+                                    </a>
+                                    <span class="more float-end">+</span>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Frozen Foods</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Fruits & Vegetables</span>
+                                        </label>
+                                    </a>
+                                    <span class="more float-end">+</span>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Grocery & Staples</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Household Needs</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <input id="bvg" type="checkbox">
+                                        <label for="bvg">
+                                            <span>Meats & Seafood</span>
+                                        </label>
+                                    </a>
+                                    <span class="more float-end">+</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <h5>FILTER BY PRICE</h5>
+                    </div>
+                    <div class="status">
+                        <h5>PRODUCT STATUS</h5>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <input form="stock" type="checkbox">
+                                    <label for="stock">
+                                        <span>In Stock</span>
+                                    </label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <input form="sale" type="checkbox">
+                                    <label for="sale">
+                                        <span>On Sale</span>
+                                    </label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="brands">
+                        <h5>BRANDS</h5>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <input id="Frito Lay" type="checkbox">
+                                    <label for="Frito Lay">
+                                        <span>Frito Lay</span>
+                                    </label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <input id="Nespresso" type="checkbox">
+                                    <label for="Nespresso">
+                                        <span>Nespresso</span>
+                                    </label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <input id="Oreo" type="checkbox">
+                                    <label for="Oreo">
+                                        <span>Oreo</span>
+                                    </label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <input id="Quaker" type="checkbox">
+                                    <label for="Quaker">
+                                        <span>Quaker</span>
+                                    </label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <input id="Welch's" type="checkbox">
+                                    <label for="Welch's">
+                                        <span>Welch's</span>
+                                    </label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget-img">
+                        <img class="img-fluid" src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/sidebar-banner.gif" alt="">
                     </div>
                 </div>
-                <div class="second">
-                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-image-7.jpg" alt="">
-                </div>
-            </div>
-    </section>
-    <section data-aos="fade-up" id="prod-sum">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="products left col-lg-2 col-12 text-center">
-                        <div class="image">
+                <div class="right col-lg-9">
+                    <div class="shop-view d-flex justify-content-between px-2">
+                        <div class="left">
+                            <a class="" href="">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
                             <a href="">
-                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/baverages-1.jpg"
-                                    alt="">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-ellipsis"></i>
                             </a>
                         </div>
-                        <div class="p-info">
-                            <p class="prod-class">Beverages</p>
-                            <span class="prod-count">11 items</span>
+                        <div class="right">
+                            <span>Sort by latest <i class="fa-solid fa-angle-down"></i></span>
+                            <span>Show</span>
+                            <span class="viewlistdropdown">15<i class="fa-solid fa-angle-down"></i></span>
                         </div>
                     </div>
-                    <div class="right row justify-content-between align-items-center col-lg-10">
-                        <div class="products col-lg-3 col-6 border-bottom-0 border-end-0">
-                            <div class="image">
-                                <a href="">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Biscuits & Snacks</p>
-                                <span class="prod-count">6 items</span>
-                            </div>
-                        </div>
-                        <div class="products col-lg-3 col-6 border-bottom-0 border-end-0">
-                            <div class="image">
-                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/breadbakery-1.jpg"
-                                    alt="">
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Breads & Bakery</p>
-                                <span class="prod-count">6 items</span>
-                            </div>
-                        </div>
-                        <div class="products col-lg-3 col-6 border-bottom-0 border-end-0">
-                            <div class="image">
-                                <a href="">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/dairy-1.jpg"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Breakfast & Dairy</p>
-                                <span class="prod-count">8 items</span>
-                            </div>
-                        </div>
-                        <div class="products col-lg-3 col-6 border-bottom-0">
-                            <div class="image">
-                                <a href="">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/category-image4.png"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Frozen Foods</p>
-                                <span class="prod-count">7 items</span>
-                            </div>
-                        </div>
-                        <div class="products col-lg-3 col-6 border-end-0">
-                            <div class="image">
-                                <a href="">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/fruitvegetables-1.jpg"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Fruits & Vegetables</p>
-                                <span class="prod-count">12 items</span>
-                            </div>
-                        </div>
-                        <div class="products col-lg-3 col-6 border-end-0">
-                            <div class="image">
-                                <a href="">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/category-image2.png"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Grocery & Staples</p>
-                                <span class="prod-count">7 items</span>
-                            </div>
-                        </div>
-                        <div class="products col-lg-3 col-6 border-end-0">
-                            <div class="image">
-                                <a href="">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/household-1.jpg"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Household Needs</p>
-                                <span class="prod-count">1 items</span>
-                            </div>
-                        </div>
-                        <div class="products col-lg-3 col-6">
-                            <div class="image">
-                                <a href="">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/meat-1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="p-info">
-                                <p class="prod-class">Meats & Seafood</p>
-                                <span class="prod-count">5 items</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section data-aos="fade-up" id="elementor">
-            <div class="container">
-                <div class="all row justify-content-between">
-                    <div class="left col-lg-4 col-12">
-                        <div class="top">
-                            <p>Deals of the <b>week!</b></p>
-                            <div id="timedown" class="d-flex"></div>
-                            <span>Remains until the end of the offer</span>
-                            <div class="prod-count">
-                                <div class="prod-cs">
-                                    Available : <span>27</span>
-                                </div>
-                                <div class="prod-progress">
-                                    <span class="progress" style="width: 87%;"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="elementorProductDeals">
+                    <div id="shopwideProdutcs" class="row container-fluid py-4">
 
-                            </div>  
-                    </div>
-                    <div id="elementorProduct" class="right p-0 col-lg-8 row justify-content-between">
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-    <section id="discount">
-            <div class="container">
-                <div class="row justify-content-between g-3">
-                    <div class="left col-lg-6 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/bacola-banner-11.jpg" alt="">
-                        </div>
-                        <div class="overlay">
-                            <p>Weekend Discount 40%</p>
-                            <h3>Cookie and Ice Cream</h3>
-                            <span>Bacola Weekend Discount</span>
-                            <a href="">Shop now</a>
-                        </div>
-                    </div>
-                    <div class="right col-lg-6 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/bacola-banner-12.jpg" alt="">
-                        </div>
-                        <div class="overlay">
-                            <p>Weekend Discount 30%</p>
-                            <h3>Cookie and Ice Cream</h3>
-                            <span>Bacola Weekend Discount</span>
-                            <a href="">Shop now</a>
-                        </div>
-                    </div>
+    <section id="recently">
+        <div class="container-fluid">
+            <div class="row container-fluid">
+                <div class="head-section">
+                    <h5>RECENTLY VIEWED PRODUCTS</h5>
                 </div>
+                <div id="recentlyProducts" class="row justify-content-between align-items-center"></div>
             </div>
-    </section>
-    <section data-aos="fade-up" id="bestSellers">
-            <div class="container">
-                <div class="row">
-                    <div class="top col-lg-12">
-                        <h4>BEST SELLERS</h4>
-                        <p>Do not miss the current offers until the end of March.</p>
-                    </div>
-                    <div id="bestProducts" class="row col-lg-12 justify-content-between">
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section data-aos="fade-up" id="autoship">
-            <div class="container">
-                <div class="row">
-                    <div class="top col-lg-12">
-                        <a href="">Save an Extra 5-10 % On Every Autoship Order!</a>
-                    </div>
-                    <div id="autoshipProducts" class="bottom row">
-                       
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section data-aos="fade-up" id="widgets">
-            <div class="container">
-                <div class="row align-items-center justify-content-between g-4">
-                    <div class="widget col-lg-4 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/bacola-banner-05.jpg"
-                                alt="">
-                        </div>
-                        <div class="overlay">
-                            <p>Weekend Discount 20%</p>
-                            <h3>Natural Eggs</h3>
-                            <span>Eat one every day</span>
-                            <a href="">Shop now</a>
-                        </div>
-                    </div>
-                    <div class="widget col-lg-4 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/bacola-banner-06.jpg"
-                                alt="">
-                        </div>
-                        <div class="overlay">
-                            <p>Weekend Discount 40%</p>
-                            <h3>Taste the Best</h3>
-                            <span>Shine the morning</span>
-                            <a href="">Shop now</a>
-                        </div>
-                    </div>
-                    <div class="widget col-lg-4 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/bacola-banner-10.jpg"
-                                alt="">
-                        </div>
-                        <div class="overlay">
-                            <p>Weekend Discount 30%</p>
-                            <h3>Ditch the Junk</h3>
-                            <span>Breakfast made better</span>
-                            <a href="">Shop now</a>
-                        </div>
-                    </div>
-                    <div class="widget col-lg-4 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/blog-3-370x260.jpg" alt="">
-                        </div>
-                        <div class="widget-info">
-                            <a class="category" href="">Tips & Tricks</a>
-                            <h2 class="title"><a href="">But I must explain to you how all this mistaken idea</a></h2>
-                            <span class="publish"><a href="">3 May 2021</a></span>
-                            <span class="comment"><a href="">3 comments</a></span>
-                            <span class="author"><span>by</span> <a href="">Bacola</a></span>
-                        </div>
-                    </div>
-                    <div class="widget col-lg-4 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/blog-5-370x260.jpg" alt="">
-                        </div>
-                        <div class="widget-info">
-                            <a class="category" href="">Grocery</a>
-                            <h2 class="title"><a href="">The Problem With Typefaces on the Web</a></h2>
-                            <span class="publish"><a href="">3 May 2021</a></span>
-                            <span class="comment"><a href="">3 comments</a></span>
-                            <span class="author"><span>by</span> <a href="">Bacola</a></span>
-                        </div>
-                    </div>
-                    <div class="widget col-lg-4 col-12">
-                        <div class="image">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/blog-1-370x260.jpg" alt="">
-                        </div>
-                        <div class="widget-info">
-                            <a class="category" href="">Grocery</a>
-                            <h2 class="title"><a href="">English Breakfast Tea With Tasty Donut Desserts</a></h2>
-                            <span class="publish"><a href="">3 May 2021</a></span>
-                            <span class="comment"><a href="">3 comments</a></span>
-                            <span class="author"><span>by</span> <a href="">Bacola</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
     <section data-aos="fade-up" id="subscribe">
         <div class="container">
@@ -744,30 +658,9 @@
             </div>
         </div>
     </section>
-    <div class="locationbarModal col-lg-4 p-4">
-            <h5>Choose your Delivery Location</h5>
-            <p>Enter your address and we will specify the offer for your area.</p>
-            <input class="col-lg-12 mb-3" type="text" placeholder="Search your area">
-            <i class="fa-solid fa-magnifying-glass searchicon"></i>
-            <ul class="p-0">
-                <li class="">Select a Location</li>
-                <li>Alabama</li>
-                <li>Alaska</li>
-                <li>Arizona</li>
-                <li>California</li>
-                <li>Colorado</li>
-                <li>Florida</li>
-                <li>Georgia</li>
-                <li>Kansas</li>
-                <li>Minnesota</li>
-                <li>New York</li>
-                <li>Washington</li>
-            </ul>
-            <i class="fa-solid fa-xmark close"></i>
-    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/jquery.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/script.js"></script>
+<script src="js/shopwide.js"></script>
 </html>

@@ -1,0 +1,93 @@
+@import"_register.scss";
+#contact{
+    padding: 3rem 0;
+    h1{
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .top{
+        .box{
+            background-color: #F3F3F6;
+            padding: 2rem 1rem;
+            border-radius: 8px;
+            i{
+                font-size: 30px;
+                margin-bottom: 10px;
+                color: #233A95;
+            }
+            h5{
+                font-size: 15px;
+                font-weight: 500;
+            }
+            p{
+                font-size: .8125rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .bottom{
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .all{
+            width: 70%;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+        form{
+            label{
+                margin-bottom: 10px;
+            }
+            input{
+                background-color: #f3f4f7;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                padding: 0.5rem 2rem 0.5rem 1.5rem ;
+            }
+            textarea{
+                background-color: #f3f4f7;
+                border-radius: 8px;
+                resize: none;
+                outline: none;
+                border: none;
+                padding:1rem 1.5rem;
+            }
+            button{
+                cursor: pointer;
+                background-color: #233A95;
+                border-radius: 4px;
+                color: white;
+                padding:0.5rem 1rem;
+                border: 1px solid #233A95;
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+.location{
+    position: absolute;
+    a{
+        color: #3e445a;
+        font-size: .75rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        &:hover{
+            text-decoration: underline !important;
+        }
+    }
+    i{
+        font-size: 10px;
+    }
+    span{
+        font-size: .75rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        opacity: 0.5;
+    }
+}

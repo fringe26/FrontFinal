@@ -35,8 +35,10 @@ $('.slider-all').slick({
         }
     ]
 });
-
-
+if(localStorage.getItem('basket') == null) {
+    localStorage.setItem('basket',JSON.stringify([]));  
+};
+let products = [];
 function GetProduct(prodCount) {
     let prodArray = [];
    return fetch('data/products.json')
@@ -49,8 +51,44 @@ function GetProduct(prodCount) {
              return prodArray;
     });
 }
-let products = [];
-async function InsertHtml(count,id) {
+function GetProductByID(id) {
+   return fetch('data/products.json')
+        .then(response => { return response.json() })
+        .then(data => {
+               data.products.forEach(prod=>{
+                   if(prod.id==id){
+                    let basket = JSON.parse(localStorage.getItem('basket'));
+                    let data_id = prod.id;
+                    let prod_name = prod.name;
+                    let prod_price = prod.price.newprice;
+                    let prod_img = prod.picture.indexpage;
+                    let existProd = basket.find(p => p.Id == data_id);
+                    if(existProd == undefined) {
+                        basket.push({
+                          Id: data_id,
+                          Name: prod_name,
+                          Price: prod_price,
+                          Src: prod_img,
+                          Count: 1
+                        })
+                      }
+                      else{
+                        existProd.Count += 1;
+                      }
+                
+                      localStorage.setItem('basket',JSON.stringify(basket));
+                   }
+               })
+               CountBasket();
+    } ) 
+}
+function CountBasket(){
+    let basket = JSON.parse(localStorage.getItem('basket'));
+    let count = basket.length;
+    document.getElementById('counterStrike').innerHTML = count
+}
+CountBasket();
+async function main(count,id) {
     products = await GetProduct(count);
     let x=``;
     products.forEach(prod=>{
@@ -87,7 +125,7 @@ function Draw(prod,count){
             }
         x += `
         <div class="prod col-lg-${col} col-6">
-        <div class="image">
+        <div onclick="location.href = 'product.html';" class="image">
             <img class="img-fluid" src="${prod.picture.indexpage}" alt="">
         </div>
         <div class="product-buttons">
@@ -104,20 +142,18 @@ function Draw(prod,count){
             <span class="text-decoration-line-through old-price">${oldPrice}</span>
             <span class="new-price">${"$" + prod.price.newprice}</span>
             <div class="addToCard">
-                <a href="">Add to cart</a>
+            <a class="addBasket" data-id="${prod.id}" onclick="addCard(event);" href="">Add to cart</a>
             </div>
         </div>
         </div>
         `
-        
+        let addBasket = document.querySelectorAll(`[class="addBasket"]`);
         return x;
 }
-InsertHtml(6,"#timemanagerProduct");
-InsertHtml(5,"#productsIndex");
-InsertHtml(10,'#shipProducts');
-InsertHtml(1,"#timemanagerProductDeals");
-
-
+main(6,"#elementorProduct");
+main(5,"#bestProducts");
+main(10,'#autoshipProducts');
+main(1,"#elementorProductDeals");
 var countDownDate = new Date("June 11, 2022 15:37:25").getTime();
 var x = setInterval(function () {
 
@@ -141,4 +177,27 @@ function addCard(event){
     let id=event.target.getAttribute("data-id");
     GetProductByID(id);
 }
+$(".homebtn").hover(function(e){
+    e.preventDefault();
+    $(".dropdownhome").toggleClass("active")    
+})
+$(".shopbtn").hover(function(e){
+    e.preventDefault();
+    $(".dropdownshop").toggleClass("active")    
+})
+$(".locationbar").click(function(){
+    $(".locationbarModal").toggleClass("active");
+})
+$(".close").click(function(){
+    $(".locationbarModal").toggleClass("active");
+})
+$("#h-bottom .left").click(function(){
+    $("#h-bottom .left .clickdown").toggleClass('active')
+})
+$(".fruitshover").hover(function(){
+    $(".fruitsdropdown").toggleClass('active')
+})
+$(".beveragehover").hover(function(){
+    $(".beveragedropdown").toggleClass('active')
+})
 

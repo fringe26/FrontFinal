@@ -1,0 +1,160 @@
+
+.addToCard{
+    width: 100%;
+}
+.product{
+    padding: 3rem 0;
+    background-color: #F7F8FD;
+}
+#prodFull{
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #edeef5;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+.prod-header{
+    .prod-name{
+        cursor: pointer;
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+    }
+    .prod-sku{
+        border-left: 1px solid hsl(233, 29%, 95%);
+        font-size: 0.75rem;
+        color: #9b9bb4;
+        padding-left: 1rem;
+        margin-left: 1rem;
+    }
+}
+.prod-detail{
+    .new-price{
+        font-family: 'Dosis', sans-serif !important;
+        font-size: 1.625rem !important;
+    }
+    .prod-description{
+        font-size: .8125rem;
+    }
+    .old-price{
+        font-family: 'Dosis', sans-serif !important;       
+        font-size: 1.25rem !important;
+    }
+    .prod-category{
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+    .prod-stock{
+        text-align: center;
+        background: #E5F8ED;
+        padding: 0.3rem;
+        border-radius: 30px;
+        width: 25% !important;
+    }
+    .w{
+        font-size: .75rem;
+        border: 1px solid #edeef5;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .compare{
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: .75rem;
+        text-align: center;
+        padding: 0.5rem;
+        text-transform: uppercase;
+    }
+    .img{
+        img{
+            width: 100%;
+        }
+    }
+    .right{
+        .warning{
+            background-color: #FFEEF2;
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 8px;
+            p{
+                margin-bottom: 0;
+                font-size: 0.75rem;
+                color: red;
+            }
+            margin-bottom: 15px;
+        }
+        .icon-messages{
+            background-color: #F7F8FD;
+            padding: 1rem 2rem;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+            ul{
+                li{
+                    display: flex;
+                    i{
+                        font-size: 1.25rem;
+                    }
+                    p{
+                        font-size: 0.75rem;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+.prod-fulldesc{
+    background-color: white;
+    border: 1px solid #edeef5;
+    border-radius: 8px;
+    padding: 2rem;
+    .prod-fulldescription{
+        p{
+            font-size: .9375rem;
+        }
+    }
+    ul{
+        padding: 0;
+    }
+    .top{
+        li{
+            button{
+                background:white;
+                border: none;
+                margin-right: 30px;
+                color: #c2c2d3;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.social{
+    i{
+        color:white;
+        padding: 1rem;
+        border-radius: 100%;
+    }
+}
+.fa-facebook-f{
+    background-color: #233a95;
+    color: white !important;
+}
+.fa-twitter{
+    background-color: #1da1f2;
+    color: white !important;
+}
+.fa-pinterest-p{
+    background-color: #e60023;
+}
+.fa-linkedin-in{
+    background-color: #0077b5;
+}
+.fa-github{
+    background-color: #ff4500;
+}
+.fa-whatsapp{
+    background-color: #25d366;
+}
