@@ -41,7 +41,7 @@ if(localStorage.getItem('basket') == null) {
 let products = [];
 function GetProduct(prodCount) {
     let prodArray = [];
-   return fetch('data/products.json')
+   return fetch('data/products.json')  //skytech.az/register
         .then(response => { return response.json() })
         .then(data => {
                 for(let i=0;i<prodCount;i++){
